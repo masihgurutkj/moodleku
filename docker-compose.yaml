@@ -102,6 +102,24 @@ services:
     networks: 
       - moodlenets
 
+#################### DATABASE PHPMYADMIN ########################
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: always
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=mariadb
+      - PMA_PORT=3306
+      - PMA_USER=root
+      - PMA_PASSWORD=toor
+    ports:
+      - '9090:80'
+    hostname: phpmyadmin
+    networks:
+      - moodlenets
+
+
 ############### BALANCING WEB [HAPROXY] ##################
   haproxy:
     image: haproxy:bullseye
