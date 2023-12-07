@@ -1,5 +1,10 @@
 # moodleku
-Moodle Server Menggunakan Docker 
+Moodle Server Menggunakan Docker :
+- 3 Webserver
+- 1 Database
+- 1 PHPMyAdmin
+- 1 Haproxy
+  
 
 ### DOWNLOAD  ###
 https://github.com/masihgurutkj/moodleku.git
