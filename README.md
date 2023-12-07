@@ -14,7 +14,7 @@ chmod +x menu-server.sh && \
   Address
     - http://ipaddress:8001
     - http://ipaddress:8002
-    - gttp://ipaddress:8003
+    - http://ipaddress:8003
   Akun
     - username : user
     - password : bitnami
